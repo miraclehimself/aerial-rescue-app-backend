@@ -27,9 +27,9 @@ SECRET_KEY = 'django-insecure-9o3nmc(07ur-%ze&jb3-k+72i+2isi4#(vxd04ul^g58kek+5b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://aerialbackend-e2bdb7f20c68.herokuapp.com', '127.0.0.1' ]
+ALLOWED_HOSTS = ['*']
 
-
+https://aerialbackend-e2bdb7f20c68.herokuapp.com/
 # Application definition
 
 INSTALLED_APPS = [
