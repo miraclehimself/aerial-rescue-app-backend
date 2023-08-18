@@ -17,7 +17,7 @@ import sys
 import json
 import datetime
 import numpy as np
-# import skimage.draw
+import skimage.draw
 import cv2
 
 from mrcnn.visualize import display_instances, display_top_masks
