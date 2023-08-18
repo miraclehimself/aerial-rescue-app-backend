@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-https://aerialbackend-e2bdb7f20c68.herokuapp.com/
+# https://aerialbackend-e2bdb7f20c68.herokuapp.com/
 # Application definition
 
 INSTALLED_APPS = [
