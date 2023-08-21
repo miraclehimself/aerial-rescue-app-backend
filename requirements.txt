@@ -12,7 +12,7 @@ h5py==2.10.0
 IPython[all]
 # asgiref==3.0.0
 Django==2.2.3
-# django-cors-headers==1.2.2
+django-cors-headers==1.2.2
 djangorestframework==3.10.3
 djangorestframework-simplejwt==5.2.2
 gunicorn==19.9.0
