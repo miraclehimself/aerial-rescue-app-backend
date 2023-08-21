@@ -7,7 +7,7 @@ scikit-image==0.16.2
 tensorflow==2.0.0
 keras==2.2.5
 # opencv-python==4.5.4.60
-opencv-headless==4.5.4.60
+pencv-python-headless==4.0.1.24
 h5py==2.10.0
 # imgaug==0.4.0
 IPython[all]
