@@ -15,7 +15,8 @@ matplotlib.use('Agg')
 from pathlib import Path
 from datetime import timedelta
 import os
-
+from custom_patch import custom_tf_patch
+custom_tf_patch()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 

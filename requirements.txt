@@ -5,7 +5,8 @@ Pillow==8.4.0
 matplotlib
 scikit-image==0.16.2
 tensorflow==2.0.0
-keras==2.2.5
+# keras==2.2.5
+git+https://github.com/miraclehimself/keras.git@main
 # opencv-python==4.5.4.60
 opencv-python-headless==4.0.1.24
 h5py==2.10.0
