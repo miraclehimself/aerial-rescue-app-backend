@@ -62,7 +62,7 @@ class ImageAiViewSet(ModelViewSet):
         data = ImageModel.objects.filter(id=serializer.data['id']).update(outputted_image=outputted_image)
         # serializer = ImageSerializer(data, many=False) 
         return Response({
-            'message': 'Image Sent Successfully',
+            'message': 'Image has been received and its been processed, Kindly check your history for the analysed copy',
             # 'data': serializer.data,
             'status': 'success',
         },200)
