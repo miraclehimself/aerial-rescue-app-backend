@@ -46,7 +46,7 @@ class AConfig(mrcnn.config.Config):
 model = mrcnn.model.MaskRCNN(mode="inference", 
                              config=AConfig(),
                              model_dir=os.getcwd())
-model.load_weights(filepath="aerial_mask_rcnn_trained.h5", 
+model.load_weights(filepath="mask_rcnn_aerial_cfg_coco_0010.h5", 
                    by_name=True)
 image = cv2.imread("aerial/images/test/000000000570.jpg")
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
