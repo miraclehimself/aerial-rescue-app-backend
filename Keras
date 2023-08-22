@@ -1,0 +1,88 @@
+2023-08-21T18:01:43,793 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-ephem-wheel-cache-g4udy6m6
+2023-08-21T18:01:43,795 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-5tbrxx14
+2023-08-21T18:01:43,795 Initialized build tracking at C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-5tbrxx14
+2023-08-21T18:01:43,795 Created build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-5tbrxx14
+2023-08-21T18:01:43,795 Entered build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-5tbrxx14
+2023-08-21T18:01:43,795 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-wheel-kcy89j1o
+2023-08-21T18:01:43,795 ERROR: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:01:43,802 Exception information:
+2023-08-21T18:01:43,802 Traceback (most recent call last):
+2023-08-21T18:01:43,802   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\base_command.py", line 160, in exc_logging_wrapper
+2023-08-21T18:01:43,802     status = run_func(*args)
+2023-08-21T18:01:43,802   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 247, in wrapper
+2023-08-21T18:01:43,802     return func(self, options, args)
+2023-08-21T18:01:43,802   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\commands\wheel.py", line 124, in run
+2023-08-21T18:01:43,802     reqs = self.get_requirements(args, options, finder, session)
+2023-08-21T18:01:43,802   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 460, in get_requirements
+2023-08-21T18:01:43,802     '(see "pip help {name}")'.format(**opts)
+2023-08-21T18:01:43,802 pip._internal.exceptions.CommandError: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:01:43,832 Remote version of pip: 23.2.1
+2023-08-21T18:01:43,832 Local version of pip:  22.3.1
+2023-08-21T18:01:43,834 Was pip installed by pip? False
+2023-08-21T18:01:43,834 Removed build tracker: 'C:\\Users\\Ayobami\\AppData\\Local\\Temp\\pip-build-tracker-5tbrxx14'
+2023-08-21T18:01:56,330 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-ephem-wheel-cache-i0emehv9
+2023-08-21T18:01:56,332 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-ft0hlvhm
+2023-08-21T18:01:56,332 Initialized build tracking at C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-ft0hlvhm
+2023-08-21T18:01:56,332 Created build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-ft0hlvhm
+2023-08-21T18:01:56,332 Entered build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-ft0hlvhm
+2023-08-21T18:01:56,332 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-wheel-ualdea88
+2023-08-21T18:01:56,333 ERROR: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:01:56,335 Exception information:
+2023-08-21T18:01:56,335 Traceback (most recent call last):
+2023-08-21T18:01:56,335   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\base_command.py", line 160, in exc_logging_wrapper
+2023-08-21T18:01:56,335     status = run_func(*args)
+2023-08-21T18:01:56,335   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 247, in wrapper
+2023-08-21T18:01:56,335     return func(self, options, args)
+2023-08-21T18:01:56,335   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\commands\wheel.py", line 124, in run
+2023-08-21T18:01:56,335     reqs = self.get_requirements(args, options, finder, session)
+2023-08-21T18:01:56,335   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 460, in get_requirements
+2023-08-21T18:01:56,335     '(see "pip help {name}")'.format(**opts)
+2023-08-21T18:01:56,335 pip._internal.exceptions.CommandError: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:01:56,354 Remote version of pip: 23.2.1
+2023-08-21T18:01:56,354 Local version of pip:  22.3.1
+2023-08-21T18:01:56,354 Was pip installed by pip? False
+2023-08-21T18:01:56,354 Removed build tracker: 'C:\\Users\\Ayobami\\AppData\\Local\\Temp\\pip-build-tracker-ft0hlvhm'
+2023-08-21T18:02:42,625 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-ephem-wheel-cache-9367g3c4
+2023-08-21T18:02:42,627 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-8tk42h07
+2023-08-21T18:02:42,627 Initialized build tracking at C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-8tk42h07
+2023-08-21T18:02:42,627 Created build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-8tk42h07
+2023-08-21T18:02:42,627 Entered build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-8tk42h07
+2023-08-21T18:02:42,627 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-wheel-gjavll40
+2023-08-21T18:02:42,627 ERROR: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:02:42,632 Exception information:
+2023-08-21T18:02:42,632 Traceback (most recent call last):
+2023-08-21T18:02:42,632   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\base_command.py", line 160, in exc_logging_wrapper
+2023-08-21T18:02:42,632     status = run_func(*args)
+2023-08-21T18:02:42,632   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 247, in wrapper
+2023-08-21T18:02:42,632     return func(self, options, args)
+2023-08-21T18:02:42,632   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\commands\wheel.py", line 124, in run
+2023-08-21T18:02:42,632     reqs = self.get_requirements(args, options, finder, session)
+2023-08-21T18:02:42,632   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 460, in get_requirements
+2023-08-21T18:02:42,632     '(see "pip help {name}")'.format(**opts)
+2023-08-21T18:02:42,632 pip._internal.exceptions.CommandError: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:02:42,655 Remote version of pip: 23.2.1
+2023-08-21T18:02:42,655 Local version of pip:  22.3.1
+2023-08-21T18:02:42,656 Was pip installed by pip? False
+2023-08-21T18:02:42,656 Removed build tracker: 'C:\\Users\\Ayobami\\AppData\\Local\\Temp\\pip-build-tracker-8tk42h07'
+2023-08-21T18:03:18,227 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-ephem-wheel-cache-1h5q6gcv
+2023-08-21T18:03:18,228 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-hcsx6k7c
+2023-08-21T18:03:18,229 Initialized build tracking at C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-hcsx6k7c
+2023-08-21T18:03:18,229 Created build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-hcsx6k7c
+2023-08-21T18:03:18,229 Entered build tracker: C:\Users\Ayobami\AppData\Local\Temp\pip-build-tracker-hcsx6k7c
+2023-08-21T18:03:18,229 Created temporary directory: C:\Users\Ayobami\AppData\Local\Temp\pip-wheel-6m5xm_2c
+2023-08-21T18:03:18,229 ERROR: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:03:18,232 Exception information:
+2023-08-21T18:03:18,232 Traceback (most recent call last):
+2023-08-21T18:03:18,232   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\base_command.py", line 160, in exc_logging_wrapper
+2023-08-21T18:03:18,232     status = run_func(*args)
+2023-08-21T18:03:18,232   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 247, in wrapper
+2023-08-21T18:03:18,232     return func(self, options, args)
+2023-08-21T18:03:18,232   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\commands\wheel.py", line 124, in run
+2023-08-21T18:03:18,232     reqs = self.get_requirements(args, options, finder, session)
+2023-08-21T18:03:18,232   File "C:\Users\Ayobami\anaconda3\envs\new-mask-tut\lib\site-packages\pip\_internal\cli\req_command.py", line 460, in get_requirements
+2023-08-21T18:03:18,232     '(see "pip help {name}")'.format(**opts)
+2023-08-21T18:03:18,232 pip._internal.exceptions.CommandError: You must give at least one requirement to wheel (see "pip help wheel")
+2023-08-21T18:03:18,260 Remote version of pip: 23.2.1
+2023-08-21T18:03:18,260 Local version of pip:  22.3.1
+2023-08-21T18:03:18,261 Was pip installed by pip? False
+2023-08-21T18:03:18,262 Removed build tracker: 'C:\\Users\\Ayobami\\AppData\\Local\\Temp\\pip-build-tracker-hcsx6k7c'
