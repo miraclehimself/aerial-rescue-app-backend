@@ -48,10 +48,12 @@ INSTALLED_APPS = [
     'imageai',
     'rest_framework_simplejwt',
     'rest_framework.authtoken',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
@@ -193,7 +195,7 @@ STATIC_URL = '/static/'
 STATIC_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
