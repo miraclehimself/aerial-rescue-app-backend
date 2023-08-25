@@ -10,9 +10,9 @@ class ImageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ImageModel
-        fields = ('id', 'user_id', 'identify_object', 'inputted_image', 'outputted_image', 'result')
+        fields = '__all__'
 
         read_only_fields = ('id', 'user_id')
-        required_fields = ('user_id', 'inputted_image', 'identify_object')
+        required_fields = ('inputted_image')
         
  

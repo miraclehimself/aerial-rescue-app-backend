@@ -15,6 +15,10 @@ matplotlib.use('Agg')
 from pathlib import Path
 from datetime import timedelta
 import os
+# import cloudinary_storage
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from custom_patch import custom_tf_patch
 custom_tf_patch()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -49,6 +53,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework.authtoken',
     'whitenoise.runserver_nostatic',
+    'cloudinary',
+    # 'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -134,22 +140,22 @@ DATABASES = {
     #     'HOST': 'spryrr1myu6oalwl.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
     #     'PORT': '3306',
     # } 
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'aerial',
-    #     'USER': 'root',
-    #     'PASSWORD': '',
-    #     'HOST': 'localhost',
-    #     'PORT': '3306',
-    # }
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'n9t017ysc4maoyl0',
-        'USER': 'sjl9idglwd1g1brp',
-        'PASSWORD': 'fueiwfy5q1l7az1z',
-        'HOST': 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+        'NAME': 'aerial',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'n9t017ysc4maoyl0',
+    #     'USER': 'sjl9idglwd1g1brp',
+    #     'PASSWORD': 'fueiwfy5q1l7az1z',
+    #     'HOST': 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+    #     'PORT': '3306',
+    # }
     
     
  
@@ -224,3 +230,25 @@ CORS_ALLOW_CREDENTIALS = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
+
+# AWS_ACCESS_KEY_ID = 'AKIAYIEZIH2UMU6CKFMY'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'aerial-rescue'
+# AWS_S3_SIGNATURE_NAME = 's3v4',
+# AWS_S3_REGION_NAME = 'eu-north-1'
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL =  None
+# AWS_S3_VERITY = True
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'dhiyau0is',
+#     'API_KEY': '549299827213226',
+#     'API_SECRET': '0zSrspuw4flaAuLcYGmPbPped9k'
+# }
+# CLOUDINARY_URL="cloudinary://549299827213226:0zSrspuw4flaAuLcYGmPbPped9k@dhiyau0is"
+cloudinary.config( 
+  cloud_name = "dhiyau0is", 
+  api_key = "549299827213226", 
+  api_secret = "0zSrspuw4flaAuLcYGmPbPped9k" 
+)
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

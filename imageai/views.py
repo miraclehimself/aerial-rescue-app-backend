@@ -19,7 +19,7 @@ import datetime
 import numpy as np
 import skimage.draw
 import cv2
-
+import cloudinary.uploader
 from mrcnn.visualize import display_instances, display_top_masks
 from mrcnn.utils import extract_bboxes
 
@@ -47,23 +47,28 @@ class ImageAiViewSet(ModelViewSet):
     serializer_class = ImageSerializer
     parser_classes = (MultiPartParser, FormParser)
     permission_classes = (permissions.IsAuthenticated,)
+    # http_method_names = ['get', 'post', 'patch', 'delete']
 
-    @csrf_exempt
+    # @csrf_exempt
     def create(self, request, *args, **kwargs):
+        # queryset = ImageModel.objects.all()
+        # serializer_class = ImageSerializer
         identify_object = request.data['identify_object']
-        inputted_image = request.data['inputted_image']
         image = request.FILES['inputted_image']
-        # return JsonResponse(image.name, safe=False)
+        response = cloudinary.uploader.upload(image)
+        # return JsonResponse(response['secure_url'], safe=False)
         user = request.user
-        data = ImageModel.objects.create(identify_object=identify_object, inputted_image=inputted_image, user=user)
+        data = ImageModel.objects.create(identify_object=identify_object, input_image=response['secure_url'], inputted_image=image, user=user)
         serializer = ImageSerializer(data, many=False)
         # return Response(serializer.data['id'])
-        outputted_image = predict(image.name)
-        data = ImageModel.objects.filter(id=serializer.data['id']).update(outputted_image=outputted_image)
-        # serializer = ImageSerializer(data, many=False) 
+        output_image = predict(image.name)
+        analysed = cloudinary.uploader.upload(output_image)
+        data = ImageModel.objects.filter(id=serializer.data['id']).update(analysed_image=analysed['secure_url'])
+        data =  ImageModel.objects.filter(id=serializer.data['id']).order_by('-id')[0]
+        serializer = ImageSerializer(data, many=False) 
         return Response({
             'message': 'Image has been received and its been processed, Kindly check your history for the analysed copy',
-            # 'data': serializer.data,
+            'data': serializer.data,
             'status': 'success',
         },200)
     
@@ -83,7 +88,7 @@ class AConfig(mrcnn.config.Config):
     IMAGES_PER_GPU = 1
 
 def predict(image_to_be_predicted):
-    CLASS_NAMES = ['BG', 'building', 'vegetation', 'flood', 'car', 'road']
+    CLASS_NAMES = ['BG', 'building', 'vegetation', 'car', 'flood', 'road']
      
     # model = tf.keras.models.load_model('./aerial-transfer-learning/aerial_mask_rcnn_trained.h5')
      
@@ -132,9 +137,7 @@ def predict(image_to_be_predicted):
     saved_path = f"/images/{image_new_name}.jpg"
     predicted_image = display_instances(image, results['rois'], results['masks'], 
                   results['class_ids'], CLASS_NAMES, results['scores'], save_fig_path=output_path)
-    return saved_path
-    # file_path = str(settings.MEDIA_ROOT) + "/" + str(predicted_image) + ".png"
-    # new_predicted_image_path = cv2.imwrite(file_path, predicted_image)
-    # return new_predicted_image_path
+    return output_path
+  
     
         
