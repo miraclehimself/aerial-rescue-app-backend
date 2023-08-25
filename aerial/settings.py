@@ -140,25 +140,23 @@ DATABASES = {
     #     'HOST': 'spryrr1myu6oalwl.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
     #     'PORT': '3306',
     # } 
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'aerial',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'n9t017ysc4maoyl0',
-    #     'USER': 'sjl9idglwd1g1brp',
-    #     'PASSWORD': 'fueiwfy5q1l7az1z',
-    #     'HOST': 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+    #     'NAME': 'aerial',
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'HOST': 'localhost',
     #     'PORT': '3306',
     # }
-    
-    
- 
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'n9t017ysc4maoyl0',
+        'USER': 'sjl9idglwd1g1brp',
+        'PASSWORD': 'fueiwfy5q1l7az1z',
+        'HOST': 'd3y0lbg7abxmbuoi.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+        'PORT': '3306',
+    }
+
 
 }
 
