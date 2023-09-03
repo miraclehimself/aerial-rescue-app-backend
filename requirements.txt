@@ -7,6 +7,7 @@ scikit-image==0.16.2
 tensorflow==2.0.0
 # keras==2.2.5
 git+https://github.com/miraclehimself/keraswheel.git@main
+git+https://github.com/genesi/gtk2/blob/master/debian/libgtk2.0-dev.install.in
 # opencv-python==4.5.4.60
 opencv-python-headless==4.0.1.24
 h5py==2.10.0
@@ -26,5 +27,6 @@ sqlparse==0.4.0
 tzdata==2020.5
 cloudinary==1.34.0
 whitenoise==5.3.0
+libgtk2.0-dev
 protobuf==3.20.*
 
