@@ -1,17 +1,16 @@
 numpy==1.20.3
 scipy==1.4.1
 Pillow==8.4.0
-cython==0.29.24
+# cython==0.29.24
 matplotlib
 scikit-image==0.16.2
 tensorflow==2.0.0
 # keras==2.2.5
 git+https://github.com/miraclehimself/keraswheel.git@main
-# git+https://github.com/genesi/gtk2/blob/master/debian/libgtk2.0-dev.install.in
 # opencv-python==4.5.4.60
 opencv-python-headless==4.0.1.24
 h5py==2.10.0
-imgaug==0.4.0
+# imgaug==0.4.0
 IPython[all]
 asgiref==3.0.0
 Django==2.2.3
